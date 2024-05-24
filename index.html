@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>War!</title>
+        <link href="resources/css/reset.css" type="text/css" rel="stylesheet" />
+        <link href="resources/css/style.css" type="text/css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <div id="practice" style="font-size:2rem;"></div>
+
+        <div id="instructions"> <!-- explanation to how war works-->
+            If you've never played War before, this may seem pretty confusing to you. Don't worry, though! I'll try to explain it to you as best as I can.
+            War is a luck-based card game where the main objective is to win all of the cards. Each player starts off with 26 cards. Press the "Draw" button for you and player two to draw a card. If
+            the card you draw is greater in value than the card that player 2 draws, then you get to keep your cards and take the card that player 2 just drew. If the card you draw is less in value than the card
+            that player 2 draws, then player 2 gets to keep their cards and take the card that you just drew. Keep on drawing until either you or player 2 has the entire deck. Whoever has the entire deck is the
+            winner!
+        </div> <!-- closes instructions -->
+        <div id="gameboard" class="flex"> <!-- the section where everything else is at-->
+
+            <div class="flexColumn score"> <!-- the section where the score is-->
+                <h1>War!</h1>
+                <h2>Winner</h2>
+              <div id="end">
+                <h2>First Player has <span id="player1Count"></span> cards.</h2>
+                <h2>Second Player has <span id="player2Count"></span> cards.</h2>
+              </div> <!--  closes the words 4 da score-->
+        </div> <!-- closes the section where the score is-->
+
+            <div class="flex"> <!-- the place with both cards and draw button -->
+
+                <div id="firstPlayer" class="flexColumn player"> <!-- p1's card info-->
+                    <h1>First Player</h1>
+                    <div id="firstPlayerNumber" class="number"> <!-- the number on the card-->
+                    </div>
+                    <div id="firstPlayerSuit" class="suit flex"> <!-- the symbols on the card-->
+                    </div>
+                </div> <!-- closes p1's card info-->
+
+                <h1 id="draw">Draw</h1> <!-- da draw button-->
+
+                <div id="secondPlayer" class="flexColumn player"> <!-- p2's card info-->
+                    <h1>Second Player</h1>
+                    <div id="secondPlayerNumber" class="number"> <!-- the number on the card-->
+                    </div>
+                    <div id="secondPlayerSuit" class="suit flex"> <!-- the symbols on the card-->
+                    </div>
+                </div> <!-- closes p2's card info-->
+
+            </div> <!-- closes the place with both cards and draw button-->
+
+        </div> <!--closes gameboard-->
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="resources/js/script.js"></script>
+    </body>
+
+
+
+
+</html>

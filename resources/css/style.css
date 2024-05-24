@@ -1,0 +1,87 @@
+body {
+    margin: 3%;
+}
+
+#instructions{
+    padding-bottom: 5%;
+}
+
+#gameboard{
+    padding: 5px;
+    border: 2px dotted black;
+}
+
+#draw{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #000;
+    width: 8rem;
+    height: 2.5rem;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+h1{
+    margin-top: 5%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    width: 30%;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    padding: 1.5%;
+    border: 1px solid black;
+}
+
+.number{
+    font-size: 3rem;
+}
+
+.suit{
+    width: 15rem;
+}
+
+.player{
+    border: solid 2px #000;
+    width: 15rem;
+    height: 20rem;
+    text-align: center;
+}
+
+h2{
+    margin: 1rem 0;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .flex{
+    
+    flex-direction: column;
+    
+    }
+    
+    .flexColumn {
+    
+    margin: 1rem;
+    
+    }
+    
+    }
